@@ -82,8 +82,20 @@ var Search = React.createClass({
 
 							<div className="input-group input-group-lg">
 								<label>END YEAR</label>
-								<input type="date" id="fdate"
-			)
+								<input type="date" id="fdate" className="form-control" value={this.state.datef} onChange={this.handleDatefChange}/>
+							</div>
+
+							<br />
+
+							<input type="submit" value="Submit" className="btn btn-danger"/>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		)
 	}
 
-})
+});
+
+module.exports = Search;
